@@ -6,7 +6,7 @@
 /*   By: ewu <ewu@student.42heilbronn.de>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/28 12:15:43 by ewu               #+#    #+#             */
-/*   Updated: 2025/02/28 15:54:43 by ewu              ###   ########.fr       */
+/*   Updated: 2025/02/28 15:14:45 by ewu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
 class Bureaucrat
 {
 private:
-	const std::string name;
+	std::string name;
 	int grade;
 	
 public:

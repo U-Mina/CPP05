@@ -6,7 +6,7 @@
 /*   By: ewu <ewu@student.42heilbronn.de>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/28 12:47:41 by ewu               #+#    #+#             */
-/*   Updated: 2025/02/28 15:55:16 by ewu              ###   ########.fr       */
+/*   Updated: 2025/02/28 15:36:49 by ewu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,6 +81,7 @@ Bureaucrat& Bureaucrat::operator=(const Bureaucrat& other)
 {
 	if (this != &other)
 	{
+		name = other.getName();
 		grade = other.getGrade();
 	}
 	return *this;
