@@ -6,7 +6,7 @@
 /*   By: ewu <ewu@student.42heilbronn.de>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/28 12:15:43 by ewu               #+#    #+#             */
-/*   Updated: 2025/03/01 20:40:31 by ewu              ###   ########.fr       */
+/*   Updated: 2025/03/15 13:04:53 by ewu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 /** NOTE: 
  * exception classes
  */
-class Form;
+class AForm;
 
 class Bureaucrat
 {
@@ -48,7 +48,8 @@ public:
 	void setName(const std::string& name);
 	int getGrade() const;
 	const std::string &getName() const;
-	void signForm(Form& form);
+	void signForm(AForm& form);
+	void executeForm(const AForm& form) const;
 };
 
 std::ostream& operator<<(std::ostream& outPut, const Bureaucrat& bureaucrat);
